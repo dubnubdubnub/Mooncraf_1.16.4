@@ -87,6 +87,7 @@ public class Mooncraf
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("begin the lunar hellscape");
+        LOGGER.info("pogers from the other side");
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -101,4 +102,5 @@ public class Mooncraf
     }
     
     //pogers
+    //pogersfromtheotherside 
 }
