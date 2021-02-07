@@ -1,5 +1,4 @@
 package com.dubnubdubnub.mooncraf;
-//how how how do this
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -100,7 +99,4 @@ public class Mooncraf
             LOGGER.info("HELLO from Register Block");
         }
     }
-    
-    //pogers
-    //pogersfromtheotherside 
 }
