@@ -1,7 +1,5 @@
 package com.dubnubdubnub.mooncraf;
-//POGERS LOOK AT ME KOCCHIO MIRO SHEER HEARTATTACK
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,12 +14,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.dubnubdubnub.mooncraf.core.init.ItemInit;
+
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
+@Mod(Mooncraf.MOD_ID)
 public class Mooncraf
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "mooncraf1164";
 
     public Mooncraf() {
     	
@@ -29,10 +30,13 @@ public class Mooncraf
     	/*
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        
         // Register the enqueueIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+        
         // Register the processIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
@@ -46,6 +50,8 @@ public class Mooncraf
     	modEventBus.addListener(this::processIMC);
     	modEventBus.addListener(this::doClientStuff);
     	
+    	ItemInit.ITEMS.register(modEventBus);
+    	
     	//ModEntityTypes.ENTITY_TYPES.register(modEventBus);
     	
         //instance = this;
@@ -56,9 +62,7 @@ public class Mooncraf
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    	
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
@@ -100,7 +104,4 @@ public class Mooncraf
             LOGGER.info("HELLO from Register Block");
         }
     }
-    
-    //pogers
-    //pogersfromtheotherside 
 }
