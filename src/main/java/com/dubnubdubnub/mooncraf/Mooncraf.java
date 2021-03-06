@@ -1,4 +1,5 @@
 package com.dubnubdubnub.mooncraf;
+
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,7 +22,7 @@ import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 public class Mooncraf
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger OGGER = LogManager.getLogger();
     public static final String MOD_ID = "mooncraf1164";
 
     public Mooncraf() {
