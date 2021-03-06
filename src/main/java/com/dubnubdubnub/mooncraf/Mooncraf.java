@@ -22,7 +22,7 @@ import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 public class Mooncraf
 {
     // Directly reference a log4j logger.
-    private static final Logger OGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "mooncraf1164";
 
     public Mooncraf() {
