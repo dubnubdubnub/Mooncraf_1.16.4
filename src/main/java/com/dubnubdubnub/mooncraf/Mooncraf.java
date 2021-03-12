@@ -18,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
+//macbooke testo
 @Mod(Mooncraf.MOD_ID)
 public class Mooncraf
 {
