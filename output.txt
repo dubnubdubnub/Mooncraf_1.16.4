@@ -1,5 +1,6 @@
 Stopping any running daemons:
-No Gradle daemons are running.
+Stopping Daemon(s)
+1 Daemon stopped
 Cleaning the gradle cache:
 To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.3/userguide/gradle_daemon.html.
 Daemon will be stopped at the end of the build stopping after processing
@@ -26,7 +27,7 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 28s
+BUILD SUCCESSFUL in 29s
 8 actionable tasks: 7 executed, 1 up-to-date
 Generating Eclipse Project files:
 To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.3/userguide/gradle_daemon.html.
@@ -40,5 +41,5 @@ Deprecated Gradle features were used in this build, making it incompatible with 
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 9s
+BUILD SUCCESSFUL in 11s
 10 actionable tasks: 6 executed, 4 up-to-date
