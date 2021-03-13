@@ -34,9 +34,6 @@ public class SpecialItem extends Item{
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		// TODO Auto-generated method stub
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		
-		tooltip.add(new TranslationTextComponent("tooltip.demonic_shard.hold_shift"));
-		
 		if(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(),GLFW.GLFW_KEY_LEFT_SHIFT)) {
 			tooltip.add(new StringTextComponent("Rare. Powerful. Also Hurts. Seal Quickly, either into an artichoke or a branch"));
 		} else {
@@ -59,7 +56,7 @@ public class SpecialItem extends Item{
 	@Override
 	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {
 		// TODO Auto-generated method stub
-		super.onCreated(stack, worldIn, playerIn);
+		
 		
 		
 	}
