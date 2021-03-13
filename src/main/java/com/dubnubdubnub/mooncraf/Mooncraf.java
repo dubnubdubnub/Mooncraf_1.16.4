@@ -52,7 +52,8 @@ public class Mooncraf
     	modEventBus.addListener(this::doClientStuff);
     	
     	ItemInit.ITEMS.register(modEventBus);
-    	
+        BlockInit.BLOCKS.register(modEventBus);
+        
     	//ModEntityTypes.ENTITY_TYPES.register(modEventBus);
     	
         //instance = this;
