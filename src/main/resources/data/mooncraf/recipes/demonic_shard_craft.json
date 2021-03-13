@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "MMM",
+        "QQQ"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "G": {
+            "item": "minecraft:ghast_tear"
+        },
+        "M": {
+            "item": "mooncraf:essence"
+        },
+        "Q": {
+            "item": "minecraft:quartz"
+        }
+    },
+    "result": {
+        "item": "mooncraf:demonic_shard",
+        "count": 2
+    }
+}

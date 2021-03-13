@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.dubnubdubnub.mooncraf.core.init.BlockInit;
 import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -93,7 +94,7 @@ public class Mooncraf
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("begin the lunar hellscape");
-        LOGGER.info("pogers from the other side");
+        LOGGER.info("logers from the other side");
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
