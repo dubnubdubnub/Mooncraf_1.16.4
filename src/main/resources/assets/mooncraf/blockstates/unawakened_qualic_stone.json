@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "mooncraf:block/qstone_inactive"}
+	}
+}
