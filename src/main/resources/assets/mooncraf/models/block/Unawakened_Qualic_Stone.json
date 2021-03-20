@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all", 
+    "parent": "block/cube", 
     "textures": {
-      "all": "mooncraf.blocks/Unawakened_Qualic_Stone"
+      "front": "mooncraf.blocks/qstone_front_inactive",
+      "side": "mooncraf."
     }
 }
