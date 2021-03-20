@@ -1,6 +1,6 @@
 {
 	"item.mooncraf.gruel": "Gruel",
-	"tooltip.mooncraf.demonic_shard.hold_shift": "Hold \u00A7eShift\u00A77 for More Information",
-	"block.mooncraf.Unawakened_Qualic_Stone": "Unawakened Anima Vessel",
+	"tooltip.mooncraf.demonic_shard": "Hold \u00A7eShift\u00A77 for More Information",
+	"block.mooncraf.unawakened_qualic_stone": "Unawakened Anima Vessel",
 	"item.mooncraf.essence": "Essence"
 }

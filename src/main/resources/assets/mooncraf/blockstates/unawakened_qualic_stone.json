@@ -1,5 +1,6 @@
 {
 	"variants": {
-		"": { "model": "mooncraf:block/qstone_inactive"}
+		"": { "model": "mooncraf:block/unawakened_qualic_stone"
+		}
 	}
 }
