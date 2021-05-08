@@ -3,7 +3,7 @@
     "parent": "block/orientable", 
     "textures": {
       "front": "mooncraf:blocks/qstone_front_demonicpng",
-      "top": "mooncraf:blocks/qstone_top_demonic",
-      "side": "mooncraf:blocks/qstone_side_demonic"
+      "top": "mooncraf:blocks/qstone_top_inactive",
+      "side": "mooncraf:blocks/qstone_side_inactive"
     }
 }
