@@ -60,5 +60,13 @@ public class SpecialItem extends Item{
 		
 		
 	}
-
+	
+	@Override
+	public void ActionResult<ItemStack> RightClickBlockWithItemTrigger(World worldIn, Playerentity playerIn, Hand handIn) {
+		playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 200, 5));
+		unawakened_qualic_stone BLOCK = new awakened_demonic_stone(worldIn);
+		BLOCK.setPosition(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ());
+		worldIn.addBLOCK(BLOCK);
+		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
+	}
 }
