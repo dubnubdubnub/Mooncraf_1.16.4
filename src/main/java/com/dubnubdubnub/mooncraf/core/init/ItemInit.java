@@ -27,6 +27,9 @@ public class ItemInit {
 	public static final RegistryObject<SpecialItem> DEMONIC_SHARD = ITEMS.register("demonic_shard", 
 			() -> new SpecialItem(new Item.Properties().group(ItemGroup.MISC)));
 	
+	public static final RegistryObject<SpecialItem> ANGELIC_SHARD = ITEMS.register("angelic_shard", 
+			() -> new SpecialItem(new Item.Properties().group(ItemGroup.MISC)));
+	
 	//Block Items
 	public static final RegistryObject<BlockItem> UNAWAKENED_QUALIC_STONE = ITEMS.register("unawakened_qualic_stone", 
 			() -> new BlockItem(BlockInit.UNAWAKENED_QUALIC_STONE.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
