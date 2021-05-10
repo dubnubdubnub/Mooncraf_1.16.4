@@ -1,7 +1,6 @@
 {
 	"variants": {
 		"": { "model": "mooncraf:block/unawakened_qualic_stone"
-		"": { "model": "mooncraf:block/awakened_demonic_stone"
 		}
 	}
 }

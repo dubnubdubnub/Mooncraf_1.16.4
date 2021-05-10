@@ -2,5 +2,11 @@
 	"item.mooncraf.gruel": "Gruel",
 	"tooltip.mooncraf.demonic_shard": "Hold \u00A7eShift\u00A77 for More Information",
 	"block.mooncraf.unawakened_qualic_stone": "Unawakened Anima Vessel",
-	"item.mooncraf.essence": "Essence"
+	"item.mooncraf.essence": "Essence",
+	"item.mooncraf.iron_plates": "Iron Plates",
+	"item.mooncraf.plated_iron_helmet": "Plated Iron Helmet",
+	"item.mooncraf.plated_iron_chestplate": "Plated Iron Chestplate",
+	"item.mooncraf.plated_iron_leggings": "Plated Iron Leggings",
+	"item.mooncraf.plated_iron_boots": "Plated Iron Boots"
+	
 }

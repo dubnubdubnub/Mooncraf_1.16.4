@@ -1,8 +1,7 @@
-{
-    "parent": "block/cube", 
+{ 
     "parent": "block/orientable", 
     "textures": {
-      "front": "mooncraf:blocks/qstone_front_demonicpng",
+      "front": "mooncraf:blocks/qstone_front_demonic",
       "top": "mooncraf:blocks/qstone_top_inactive",
       "side": "mooncraf:blocks/qstone_side_inactive"
     }
