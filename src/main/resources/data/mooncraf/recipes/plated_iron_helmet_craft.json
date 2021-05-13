@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mooncraf:iron_plates"
+        },
+        {
+            "item": "mooncraf:iron_plates"
+        },
+        {
+            "item": "mooncraf:iron_plates"
+        },
+        {
+            "item": "minecraft:iron_helmet"
+        },
+        {
+            "item": "mooncraf:iron_plates"
+        },
+        {
+            "item": "mooncraf:iron_plates"
+        },
+        {
+            "item": "mooncraf:iron_plates"
+        }
+    ],
+    "result": {
+        "item": "mooncraf:plated_iron_helmet",
+        "count": 1
+    }
+}
