@@ -19,7 +19,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> UNAWAKENED_QUALIC_STONE = BLOCKS.register("unawakened_qualic_stone",
 			() -> new Block(AbstractBlock.Properties.create(Material.ANVIL, MaterialColor.RED)
 					.hardnessAndResistance(50f, 3000f).harvestTool(ToolType.HOE).harvestLevel(3)));
-
+	
 	/*
 	 * 
 	 * 
