@@ -11,7 +11,6 @@ import net.minecraft.entity.Entity;
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
-
 public class PlatedIronArmourModel extends EntityModel<Entity> {
 	private final ModelRenderer body;
 	private final ModelRenderer head;
@@ -43,7 +42,6 @@ public class PlatedIronArmourModel extends EntityModel<Entity> {
 		rightItem = new ModelRenderer(this);
 		rightItem.setRotationPoint(-1.0F, 7.0F, 1.0F);
 		rightArm.addChild(rightItem);
-		
 
 		leftArm = new ModelRenderer(this);
 		leftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
@@ -62,12 +60,14 @@ public class PlatedIronArmourModel extends EntityModel<Entity> {
 	}
 
 	@Override
-	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-		//previously the render function, render code was moved to a method below
+	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
+			float netHeadYaw, float headPitch) {
+		// previously the render function, render code was moved to a method below
 	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
+			float green, float blue, float alpha) {
 		body.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
 

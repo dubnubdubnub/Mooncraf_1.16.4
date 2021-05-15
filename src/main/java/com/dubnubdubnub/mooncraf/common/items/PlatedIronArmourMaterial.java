@@ -13,9 +13,10 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraftforge.common.util.Lazy;
 
 public enum PlatedIronArmourMaterial implements IArmorMaterial {
-	IRON_PLATES("iron_plates", 30, new int[] {2, 6, 7, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> Ingredient.fromItems(ItemInit.IRON_PLATES.get()));
-	
-	private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
+	IRON_PLATES("iron_plates", 30, new int[] { 2, 6, 7, 3 }, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0F, 0.0F,
+			() -> Ingredient.fromItems(ItemInit.IRON_PLATES.get()));
+
+	private static final int[] MAX_DAMAGE_ARRAY = new int[] { 13, 15, 16, 11 };
 	private final String name;
 	private final int maxDamageFactor;
 	private final int[] damageReductionAmountArray;
@@ -25,7 +26,9 @@ public enum PlatedIronArmourMaterial implements IArmorMaterial {
 	private final float knockbackResistance;
 	private final Lazy<Ingredient> repairMaterialLazy;
 
-	private PlatedIronArmourMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountArrayIn, int enchantabilityIn, SoundEvent soundEventIn, float toughnessIn, float knockbackResistanceIn, Supplier<Ingredient> repairMaterialSupplier) {
+	private PlatedIronArmourMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountArrayIn,
+			int enchantabilityIn, SoundEvent soundEventIn, float toughnessIn, float knockbackResistanceIn,
+			Supplier<Ingredient> repairMaterialSupplier) {
 		this.name = Mooncraf.MOD_ID + ":" + nameIn;
 		this.maxDamageFactor = maxDamageFactorIn;
 		this.damageReductionAmountArray = damageReductionAmountArrayIn;

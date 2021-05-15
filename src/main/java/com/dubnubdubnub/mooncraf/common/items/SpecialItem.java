@@ -22,27 +22,28 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class SpecialItem extends Item{
+public class SpecialItem extends Item {
 
 	public SpecialItem(Properties properties) {
 		super(properties);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		// TODO Auto-generated method stub
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		if(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(),GLFW.GLFW_KEY_LEFT_SHIFT)) {
-			tooltip.add(new StringTextComponent("Rare. Powerful. Also Hurts. Seal Quickly, either into an artichoke or a branch"));
+		if (InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
+			tooltip.add(new StringTextComponent(
+					"Rare. Powerful. Also Hurts. Seal Quickly, either into an artichoke or a branch"));
 		} else {
-			//"Hold " + "\u00A7e" + "Shift" + "\u00A77" + " for More Information"
+			// "Hold " + "\u00A7e" + "Shift" + "\u00A77" + " for More Information"
 			tooltip.add(new TranslationTextComponent("tooltip.demonic_shard.hold_shift"));
-			
+
 		}
 	}
-	
+
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		// TODO Auto-generated method stub
@@ -52,13 +53,11 @@ public class SpecialItem extends Item{
 		worldIn.addEntity(entity);
 		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
 	}
-	
+
 	@Override
 	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {
 		// TODO Auto-generated method stub
-		
-		
-		
+
 	}
 
 }
