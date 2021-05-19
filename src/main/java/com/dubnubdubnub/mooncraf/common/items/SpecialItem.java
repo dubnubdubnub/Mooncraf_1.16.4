@@ -60,6 +60,7 @@ public class SpecialItem extends Item {
 
 	}
 	
+	/*
 	@Override
 	public void ActionResult<ItemStack> RightClickBlockWithItemTrigger(World worldIn, Playerentity playerIn, Hand handIn) {
 		playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 200, 5));
@@ -68,4 +69,5 @@ public class SpecialItem extends Item {
 		worldIn.addBLOCK(BLOCK);
 		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
 	}
+	*/
 }
