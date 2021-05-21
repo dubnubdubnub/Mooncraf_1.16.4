@@ -1,9 +1,11 @@
 package com.dubnubdubnub.mooncraf.core.init;
 
 import com.dubnubdubnub.mooncraf.Mooncraf;
+import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
@@ -16,9 +18,9 @@ public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
 			Mooncraf.MOD_ID);
 
-	public static final RegistryObject<Block> UNAWAKENED_QUALIC_STONE = BLOCKS.register("unawakened_qualic_stone",
-			() -> new Block(AbstractBlock.Properties.create(Material.ANVIL, MaterialColor.RED)
-					.hardnessAndResistance(50f, 3000f).harvestTool(ToolType.HOE).harvestLevel(3)));
+	public static final RegistryObject<UnawakenedQualicStone> UNAWAKENED_QUALIC_STONE = BLOCKS.register("unawakened_qualic_stone",
+			() -> new UnawakenedQualicStone(AbstractBlock.Properties.create(Material.ANVIL, MaterialColor.CRIMSON_HYPHAE).harvestTool(ToolType.PICKAXE)
+					.harvestLevel(3).sound(SoundType.ANCIENT_DEBRIS).setRequiresTool()));
 	
 	/*
 	 * 
