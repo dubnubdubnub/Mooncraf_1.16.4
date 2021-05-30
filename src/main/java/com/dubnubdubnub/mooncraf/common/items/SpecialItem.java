@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.lwjgl.glfw.GLFW;
 
+import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.util.InputMappings;
@@ -59,15 +61,21 @@ public class SpecialItem extends Item {
 		// TODO Auto-generated method stub
 
 	}
+	@Override
+	public int getBurnTime(ItemStack itemStack) {
+		return 600;
+	}
+	
 	
 	/*
 	@Override
-	public void ActionResult<ItemStack> RightClickBlockWithItemTrigger(World worldIn, Playerentity playerIn, Hand handIn) {
+	public ActionResult<ItemStack> RightClickBlockWithItemTrigger(World worldIn, Playerentity playerIn, Hand handIn) {
 		playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 200, 5));
-		unawakened_qualic_stone BLOCK = new awakened_demonic_stone(worldIn);
+		UnawakenedQualicStone BLOCK = new UnawakenedQualicStone(worldIn);
 		BLOCK.setPosition(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ());
 		worldIn.addBLOCK(BLOCK);
 		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
 	}
 	*/
+	
 }

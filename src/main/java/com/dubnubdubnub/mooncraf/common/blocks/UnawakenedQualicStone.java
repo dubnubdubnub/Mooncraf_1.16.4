@@ -43,7 +43,8 @@ public class UnawakenedQualicStone extends Block {
 		return state.get(CHARGES) < 4;
 	}
 
+	
 	private boolean isValidFuel(ItemStack stack) {
-		return stack.() == ItemInit.DEMONIC_SHARD;
+		return true;
 	}
 }
