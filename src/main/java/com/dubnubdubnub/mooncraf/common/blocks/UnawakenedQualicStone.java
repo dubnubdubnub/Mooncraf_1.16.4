@@ -14,21 +14,23 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.Tags.Items; 
 import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class UnawakenedQualicStone extends Block {
-	public static final IntegerProperty CHARGES = BlockStateProperties.CHARGES;
+	public static final IntegerProperty CHARGES = BlockStateProperties.RESPAWN_ANCHOR_CHARGES;
 	
 	public UnawakenedQualicStone(Properties properties) {
 		super(properties);
-		this.setDefaultState(this.stateContainer.getBaseState().with(CHARGES, Integer.valueOf(0)));
+		this.registerDefaultState(this.stateDefinition.any().setValue(CHARGES, Integer.valueOf(0)));
 	}
 	
-	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-		ItemStack itemstack = player.getHeldItem(handIn);
-		if (handIn == Hand.MAIN_HAND && !isValidFuel(itemstack) && isValidFuel(player.getHeldItem(Hand.OFF_HAND))) {
+	public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+		ItemStack itemstack = player.getItemInHand(handIn);
+		if (handIn == Hand.MAIN_HAND && !isValidFuel(itemstack) && isValidFuel(player.getItemInHand(Hand.OFF_HAND))) {
 			return ActionResultType.PASS;
 		} else if (isValidFuel(itemstack) && notFullyCharged(state)) {
 			chargeStone(worldIn, pos, state);
-			if (!player.abilities.isCreativeMode) {
+			if (!player.abilities.instabuild) {
 				itemstack.shrink(1);
 			}
 		}
@@ -36,11 +38,11 @@ public class UnawakenedQualicStone extends Block {
 	}
 
 	private void chargeStone(World world, BlockPos pos, BlockState state) {
-		world.setBlockState(pos, state.with(CHARGES, Integer.valueOf(state.get(CHARGES) + 1)), 3);
+		world.setBlock(pos, state.setValue(CHARGES, Integer.valueOf(state.getValue(CHARGES) + 1)), 3);
 	}
 
 	private boolean notFullyCharged(BlockState state) {
-		return state.get(CHARGES) < 4;
+		return state.getValue(CHARGES) < 4;
 	}
 
 	

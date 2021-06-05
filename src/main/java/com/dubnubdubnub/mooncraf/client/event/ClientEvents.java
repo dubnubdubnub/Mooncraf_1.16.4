@@ -11,9 +11,5 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @EventBusSubscriber(modid = Mooncraf.MOD_ID, bus = Bus.FORGE, value = Dist.CLIENT)
 public class ClientEvents {
 
-	@SubscribeEvent
-	public static void oneBlockBreak(final Event event) {
-
-	}
 
 }

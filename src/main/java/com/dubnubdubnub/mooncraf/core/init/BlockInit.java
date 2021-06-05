@@ -19,24 +19,7 @@ public class BlockInit {
 			Mooncraf.MOD_ID);
 
 	public static final RegistryObject<UnawakenedQualicStone> UNAWAKENED_QUALIC_STONE = BLOCKS.register("unawakened_qualic_stone",
-			() -> new UnawakenedQualicStone(AbstractBlock.Properties.create(Material.ANVIL, MaterialColor.CRIMSON_HYPHAE).harvestTool(ToolType.PICKAXE)
-					.harvestLevel(3).sound(SoundType.ANCIENT_DEBRIS).setRequiresTool()));
-	
-	/*
-	 * 
-	 * 
-	 * { "parent": "block/cube", "textures": { "top":
-	 * "mooncraf:blocks/qstone_top_inactive", "front":
-	 * "mooncraf:blocks/qstone_front_inactive", "side":
-	 * "mooncraf:blocks/qstone_side_inactive" } }
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 */
+			() -> new UnawakenedQualicStone(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.CRIMSON_HYPHAE).harvestTool(ToolType.PICKAXE)
+					.harvestLevel(3).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
 
 }

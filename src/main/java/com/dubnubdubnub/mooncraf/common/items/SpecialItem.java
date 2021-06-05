@@ -24,6 +24,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import net.minecraft.item.Item.Properties;
+
 public class SpecialItem extends Item {
 
 	public SpecialItem(Properties properties) {
@@ -33,10 +35,10 @@ public class SpecialItem extends Item {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		// TODO Auto-generated method stub
-		super.addInformation(stack, worldIn, tooltip, flagIn);
-		if (InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
+		super.appendHoverText(stack, worldIn, tooltip, flagIn);
+		if (InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
 			tooltip.add(new StringTextComponent(
 					"Rare. Powerful. Also Hurts. Seal Quickly, either into an artichoke or a branch"));
 		} else {
@@ -47,17 +49,17 @@ public class SpecialItem extends Item {
 	}
 
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+	public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		// TODO Auto-generated method stub
-		playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 200, 5));
+		playerIn.addEffect(new EffectInstance(Effects.GLOWING, 200, 5));
 		ZombieEntity entity = new ZombieEntity(worldIn);
-		entity.setPosition(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ());
-		worldIn.addEntity(entity);
-		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
+		entity.setPos(playerIn.getX(), playerIn.getY(), playerIn.getZ());
+		worldIn.addFreshEntity(entity);
+		return ActionResult.success(playerIn.getItemInHand(handIn));
 	}
 
 	@Override
-	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {
+	public void onCraftedBy(ItemStack stack, World worldIn, PlayerEntity playerIn) {
 		// TODO Auto-generated method stub
 
 	}

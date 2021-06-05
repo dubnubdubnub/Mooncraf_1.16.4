@@ -13,8 +13,8 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraftforge.common.util.Lazy;
 
 public enum PlatedIronArmourMaterial implements IArmorMaterial {
-	IRON_PLATES("iron_plates", 30, new int[] { 2, 6, 7, 3 }, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0F, 0.0F,
-			() -> Ingredient.fromItems(ItemInit.IRON_PLATES.get()));
+	IRON_PLATES("iron_plates", 30, new int[] { 2, 6, 7, 3 }, 14, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F,
+			() -> Ingredient.of(ItemInit.IRON_PLATES.get()));
 
 	private static final int[] MAX_DAMAGE_ARRAY = new int[] { 13, 15, 16, 11 };
 	private final String name;
@@ -40,31 +40,31 @@ public enum PlatedIronArmourMaterial implements IArmorMaterial {
 	}
 
 	@Override
-	public int getDurability(EquipmentSlotType slotIn) {
+	public int getDurabilityForSlot(EquipmentSlotType slotIn) {
 		// TODO Auto-generated method stub
 		return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
 	}
 
 	@Override
-	public int getDamageReductionAmount(EquipmentSlotType slotIn) {
+	public int getDefenseForSlot(EquipmentSlotType slotIn) {
 		// TODO Auto-generated method stub
 		return this.damageReductionAmountArray[slotIn.getIndex()];
 	}
 
 	@Override
-	public int getEnchantability() {
+	public int getEnchantmentValue() {
 		// TODO Auto-generated method stub
 		return this.enchantability;
 	}
 
 	@Override
-	public SoundEvent getSoundEvent() {
+	public SoundEvent getEquipSound() {
 		// TODO Auto-generated method stub
 		return this.soundEvent;
 	}
 
 	@Override
-	public Ingredient getRepairMaterial() {
+	public Ingredient getRepairIngredient() {
 		// TODO Auto-generated method stub
 		return this.repairMaterialLazy.get();
 	}
