@@ -7,13 +7,13 @@ Daemon will be stopped at the end of the build stopping after processing
 > Configure project :
 Java: 1.8.0_241 JVM: 25.241-b07(Oracle Corporation) Arch: amd64
 WARNING: This project is configured to use the official obfuscation mappings provided by Mojang. These mapping files are licensed as All Rights Reserved with permission to use the contents for INTERNAL, REFERENCE purposes. Please avoid publishing any source code referencing these mappings. A full copy of the license can be found at the top of the mapping file itself and in the 19w36a snapshot article at: https://www.minecraft.net/en-us/article/minecraft-snapshot-19w36a.
-New Dep: net.minecraftforge:forge:1.16.4-35.1.4_mapped_official_1.16.5
+New Dep: net.minecraftforge:forge:1.16.5-36.1.0_mapped_official_1.16.5
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 5s
+BUILD SUCCESSFUL in 13s
 1 actionable task: 1 executed
 Generating all of the run files:
 To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.3/userguide/gradle_daemon.html.
@@ -22,17 +22,14 @@ Daemon will be stopped at the end of the build stopping after processing
 > Configure project :
 Java: 1.8.0_241 JVM: 25.241-b07(Oracle Corporation) Arch: amd64
 WARNING: This project is configured to use the official obfuscation mappings provided by Mojang. These mapping files are licensed as All Rights Reserved with permission to use the contents for INTERNAL, REFERENCE purposes. Please avoid publishing any source code referencing these mappings. A full copy of the license can be found at the top of the mapping file itself and in the 19w36a snapshot article at: https://www.minecraft.net/en-us/article/minecraft-snapshot-19w36a.
-New Dep: net.minecraftforge:forge:1.16.4-35.1.4_mapped_official_1.16.5
-
-> Task :genEclipseRuns
-Creating SRG -> MCP TSRG
+New Dep: net.minecraftforge:forge:1.16.5-36.1.0_mapped_official_1.16.5
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 1m 12s
-8 actionable tasks: 8 executed
+BUILD SUCCESSFUL in 33s
+8 actionable tasks: 7 executed, 1 up-to-date
 Generating Eclipse Project files:
 To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.3/userguide/gradle_daemon.html.
 Daemon will be stopped at the end of the build stopping after processing
@@ -40,13 +37,11 @@ Daemon will be stopped at the end of the build stopping after processing
 > Configure project :
 Java: 1.8.0_241 JVM: 25.241-b07(Oracle Corporation) Arch: amd64
 WARNING: This project is configured to use the official obfuscation mappings provided by Mojang. These mapping files are licensed as All Rights Reserved with permission to use the contents for INTERNAL, REFERENCE purposes. Please avoid publishing any source code referencing these mappings. A full copy of the license can be found at the top of the mapping file itself and in the 19w36a snapshot article at: https://www.minecraft.net/en-us/article/minecraft-snapshot-19w36a.
-New Dep: net.minecraftforge:forge:1.16.4-35.1.4_mapped_official_1.16.5
-
-> Task :eclipseClasspath
+New Dep: net.minecraftforge:forge:1.16.5-36.1.0_mapped_official_1.16.5
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
 See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 52s
+BUILD SUCCESSFUL in 8s
 10 actionable tasks: 6 executed, 4 up-to-date

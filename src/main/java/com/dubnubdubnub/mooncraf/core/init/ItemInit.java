@@ -50,7 +50,7 @@ public class ItemInit {
 					new Item.Properties().tab(ItemGroup.TAB_COMBAT)));
 
 	// Block Items
-	public static final RegistryObject<BlockItem> UNAWAKENED_QUALIC_STONE = ITEMS.register("unawakened_qualic_stone",
+	/* public static final RegistryObject<BlockItem> UNAWAKENED_QUALIC_STONE = ITEMS.register("unawakened_qualic_stone",
 			() -> new BlockItem(BlockInit.UNAWAKENED_QUALIC_STONE.get(),
-					new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
+					new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS))); */
 }

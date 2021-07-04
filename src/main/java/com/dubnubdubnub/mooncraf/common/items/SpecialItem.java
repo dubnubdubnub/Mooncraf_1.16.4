@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.lwjgl.glfw.GLFW;
 
-import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
+//import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;

@@ -1,7 +1,8 @@
 package com.dubnubdubnub.mooncraf.core.init;
 
 import com.dubnubdubnub.mooncraf.Mooncraf;
-import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
+
+//import com.dubnubdubnub.mooncraf.common.blocks.UnawakenedQualicStone;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -13,13 +14,18 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+
 public class BlockInit {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
 			Mooncraf.MOD_ID);
-
-	public static final RegistryObject<UnawakenedQualicStone> UNAWAKENED_QUALIC_STONE = BLOCKS.register("unawakened_qualic_stone",
-			() -> new UnawakenedQualicStone(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.CRIMSON_HYPHAE).harvestTool(ToolType.PICKAXE)
-					.harvestLevel(3).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+	/*
+	public static final RegistryObject<UnawakenedQualicStone> UNAWAKENED_QUALIC_STONE = BLOCKS
+			.register("unawakened_qualic_stone",
+			() -> new UnawakenedQualicStone(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.CRIMSON_HYPHAE)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(3)
+					.sound(SoundType.ANCIENT_DEBRIS)
+					.requiresCorrectToolForDrops())); */
 
 }

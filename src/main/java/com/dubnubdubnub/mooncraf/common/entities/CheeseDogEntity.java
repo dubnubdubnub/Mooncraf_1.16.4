@@ -8,7 +8,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -30,7 +29,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -49,8 +47,6 @@ public class CheeseDogEntity extends AnimalEntity{
 		entity1.finalizeSpawn((IServerWorld) this.level, this.level.getCurrentDifficultyAt(blockPosition()), SpawnReason.BREEDING, (ILivingEntityData)null, (CompoundNBT)null);
 		return entity1;
 	}
-	
-	
 	
 	protected void registerGoals() {
 		super.registerGoals();
@@ -93,6 +89,8 @@ public class CheeseDogEntity extends AnimalEntity{
 	protected float getSoundVolume() {
 	      return 0.4F;
 	   }
+	
+	
 
 
 }

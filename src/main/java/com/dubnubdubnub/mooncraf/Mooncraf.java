@@ -16,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.dubnubdubnub.mooncraf.core.init.BlockInit;
+import com.dubnubdubnub.mooncraf.core.init.EntityTypeInit;
 import com.dubnubdubnub.mooncraf.core.init.ItemInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -54,8 +55,15 @@ public class Mooncraf {
 		modEventBus.addListener(this::processIMC);
 		modEventBus.addListener(this::doClientStuff);
 
-		ItemInit.ITEMS.register(modEventBus);
+
 		BlockInit.BLOCKS.register(modEventBus);
+		//REGISTER CONTAINERTYPEINIT!!!!!
+		//REGISTER ENCAHNTMENTTYPEINIT!!!!!
+		EntityTypeInit.ENTITY_TYPES.register(modEventBus);
+		ItemInit.ITEMS.register(modEventBus);
+		//REGISTER POTIONTYPEINIT!!!!!
+		//REGISTER TILEENTITYTYPEINIT!!!!!
+		
 
 		// ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 

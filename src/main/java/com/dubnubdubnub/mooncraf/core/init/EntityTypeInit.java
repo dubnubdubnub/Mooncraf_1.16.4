@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class EntityTypeInit {
 	
-	private static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, Mooncraf.MOD_ID);
+	public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, Mooncraf.MOD_ID);
 	
 	public static final RegistryObject<EntityType<CheeseDogEntity>> CHEESE_DOG_ENTITY = ENTITY_TYPES
 			.register("cheese_dog_entity", 
